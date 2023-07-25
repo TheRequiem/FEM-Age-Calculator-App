@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main>
+    <div class="inputs">
+      <div class="dates">
+        <p id="day-text">Day</p>
+        <input maxlength="2" min="1" max="31" type="number" placeholder="DD" id="day">
+        <p id="day-error" class="error">This field is required</p>
+      </div>
+      <div class="dates">
+        <p id="month-text">Month</p>
+        <input maxlength="2" min="1" max="12" type="number" placeholder="MM" id="month">
+        <p id="month-error" class="error">This field is required</p>
+      </div>
+      <div class="dates">
+        <p id="year-text">Year</p>
+        <input type="number" min="1" max="2023" maxlength="4" placeholder="YYYY" id="year">
+        <p id="year-error" class="error">This field is required</p>
+      </div>
+    </div>
+    <div class="intersection">
+      <hr>
+      <button onclick="calculate()">Calculate</button>
+    </div>
+    <div class="results">
+      <p><span id="year-result">--</span> years</p>
+      <p><span id="month-result">--</span> months</p>
+      <p><span id="day-result">--</span> days</p>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/TheRequiem">The Requiem</a>.
+  </footer>
+</body>
+
+</html>
